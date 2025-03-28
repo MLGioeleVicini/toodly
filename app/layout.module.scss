@@ -1,0 +1,37 @@
+// Variabili SCSS
+$primary-color: #2563eb; // Blu
+$dark-bg: #1f2937; // Grigio scuro
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: $primary-color;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0;
+    }
+}
+
+.main {
+    flex-grow: 1;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.footer {
+    background-color: $dark-bg;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}

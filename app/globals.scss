@@ -1,0 +1,14 @@
+// Reset base o stili globali
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+// Importa i mixin o altre utilities (se necessario)
+@mixin responsive-breakpoint($size) {
+    @media (min-width: $size) {
+        @content;
+    }
+}
