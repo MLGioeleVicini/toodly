@@ -32,7 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     <main className={styles.main}>{children}</main>
 
                     <footer className={styles.footer}>
-                        <p>© {new Date().getFullYear()} - Tutti i diritti riservati</p>
+                        <p>© {new Date().getFullYear()} - Tutti i diritti iriservati</p>
                     </footer>
                 </div>
             </body>
