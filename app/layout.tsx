@@ -10,8 +10,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-    title: 'Il mio sito Next.js',
-    description: 'Benvenuto nel mio sito con Next.js!',
+    title: 'Toodly',
+    description: 'Ti risolvo i problemi!',
 };
 
 const envSchema = z.object({
