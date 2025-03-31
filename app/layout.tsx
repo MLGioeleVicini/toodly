@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import styles from './layout.module.scss'; // Usa moduli SCSS
+import { z } from 'zod';
 
 const roboto = Roboto({
     weight: ['400', '500', '700'],
@@ -12,6 +13,12 @@ export const metadata: Metadata = {
     title: 'Il mio sito Next.js',
     description: 'Benvenuto nel mio sito con Next.js!',
 };
+
+const envSchema = z.object({
+    AUTH_SECRET: z.string(),
+});
+
+export const env = envSchema.parse(process.env);
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
